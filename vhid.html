@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="body"></div>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration-form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <body style="background-color: rgb(159, 143, 135);">
+  <div class="login" ><h1>Login to the online store</h1></div>
+  <div class="login1"><p>If you are not registrated, go to this page for  <a style="color: aliceblue;"  href="registration.html">registration</a>!</p >
+  
+  <form id="registration-form">
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="confirm_password">Repeat the password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+    
+    
+    <div class="enter"><input type="submit" value="Enter"></div></div>
+  </form>
+  
+
+  <div id="error-messages"></div>
+  <div class="silka3"> <a style="color: aliceblue;" href="index.html">Return to the store</a> </div>
+  
+  <script>
+    document.getElementById("registration-form").addEventListener("submit", function(event) {
+      var login = document.getElementById("login").value;
+      var password = document.getElementById("password").value;
+      var confirm_password = document.getElementById("confirm_password").value;
+      var errorMessages = [];
+
+      if (login.trim() === "") {
+        errorMessages.push("Please, enter login");
+      }
+
+      if (password.trim() === "") {
+        errorMessages.push("Please, enter password");
+      }
+
+      if (confirm_password.trim() === "") {
+        errorMessages.push("Please, repeat password");
+      } else if (password !== confirm_password) {
+        errorMessages.push("Paswords don’t match");
+      }
+
+      if (errorMessages.length > 0) {
+        event.preventDefault(); // Зупинити відправку форми
+
+        var errorMessagesElement = document.getElementById("error-messages");
+        errorMessagesElement.innerHTML = ""; // Очистити попередні повідомлення про помилки
+
+        for (var i = 0; i < errorMessages.length; i++) {
+          var errorMessage = document.createElement("p");
+          errorMessage.className = "error-message";
+          errorMessage.textContent = errorMessages[i];
+          errorMessagesElement.appendChild(errorMessage);
+        }
+      }
+    });
+  </script>
+  <div class="body7"></div>
+ 
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="body"></div>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order from the basket</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <body style="background-color: rgb(159, 143, 135);">
+  <div class="order"><h1>Order from the basket</h1></div>
+  <div class="login2"> <h6>On this page you can order the products you selected on our website!  If you have not account 
+    on site when you push button "To order", you  will be automatically taken to the account login page.</p></div>
+   <div class="login3"><b bo >For order from basked authorisation is required. Please, login or register!</b>
+  
+   <!-- Код для відображення кошика -->
+  <div class="knopka">
+  <button id="order-button">To order</button></div>
+  <div id="error-messages"></div>
+  </div>
+
+
+  <div class="silka5"> <a style="color: aliceblue;" href="index.html">Return to the store</a> </div>
+  <script>
+    document.getElementById("order-button").addEventListener("click", function() {
+      var isAuthenticated = false; // Перевірка, чи користувач авторизований
+      
+      if (!isAuthenticated) {
+        var errorMessagesElement = document.getElementById("error-messages");
+        errorMessagesElement.innerHTML = ""; // Очистити попередні повідомлення про помилки
+        
+        var errorMessage = document.createElement("p");
+        errorMessage.className = "error-message";
+        errorMessagesElement.appendChild(errorMessage);
+        
+        // Перенаправлення на сторінку авторизації/реєстрації
+        window.location.href = "index.html";
+      } else {
+        // Логіка для відправки замовлення
+      }
+    });
+  </script>
+  <div class="body7"></div>
+</body>
+</html>

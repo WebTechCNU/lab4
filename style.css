@@ -1,0 +1,202 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 80%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.585); /* Black w/ opacity */
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #2518bc;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #e00808;
+    width: 60% !important; /* Could be more or less, depending on screen size */
+    height: 80%;
+  }
+  .close {
+    color: #6b5b5b;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .body{
+    background-color: #4f4144da ;
+    margin-top: -17px;
+    height: 2.5cm; 
+  }
+  .body2{
+    background-color: #4f4144da  ;
+    margin-top: 30px;
+    height: 2.5cm; 
+  }
+  .bakery{      /*основа*/
+    height: -50cm;
+    width: -50cm;
+  }
+  .ml-7{       /*кнопки*/
+    padding-top: 0.5cm;
+    size: 2cm;
+    border-radius: 5cm;
+    margin-bottom: -0.3cm;
+    border-color:rgb(136, 108, 108);
+    font-size: 150%;
+    margin-bottom: 20px;
+    margin-left: 7cm;
+  }
+.row{                                      /*картинки*/
+    width: 70%;
+    height: 70%;
+}
+.description{
+  color:  #4f4144da ;
+}
+.name{
+  color:  #1f00b9da;
+ 
+}
+.price{
+  color:  #463438da;
+}
+.diagrama{
+  margin-left: 6.8cm;
+  margin-top: cm;
+  margin-bottom: 2cm;
+
+}    
+.silka{
+  margin-left: 13cm;
+  padding-top: 1.2cm;
+}
+
+
+ /* Index 2 */
+
+.body3{
+  background-color: #4f4144da;
+  margin-top: 0cm;
+  height: 1.60cm; 
+}
+.body4{
+  background-color: #4f4144da;
+  margin-top: 2cm;
+  height: 2.5cm; 
+}
+.body5{
+  background-color: #4f4144da;
+  margin-top: 0cm;
+  height: 0.90cm; 
+}
+.silka2{
+  margin-left: 19cm;
+  height: 0cm;
+  padding-top: 0cm;
+  
+}
+.ournews{
+  margin-left: 17cm;
+  padding-top: 0.5cm;
+  color: #302629da;
+  border: 2px; 
+  border-style: solid;
+  margin-right: 17cm;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+  text-align: center; 
+  padding: 8px;
+}
+.news{
+  margin-left: 0.5cm;
+  margin-right: 1cm;
+}
+.namew{
+  margin-left: 2cm;
+}
+
+
+/* vhid */   
+.body7{
+  background-color: #4f4144da;
+  margin-top: 0.3cm;
+  height: 2.5cm;
+} 
+.login{
+  margin-top : 0.2cm;
+  margin-left: 14cm;
+  color: #493c3c;
+} 
+.login1{
+  margin-left: 0.5cm;
+}
+.silka3{
+  margin-top : 6.01cm;
+  margin-left: 18cm;
+
+}
+.enter{
+  margin-left: 3.5cm;
+}
+
+
+
+/* registration */        
+.rg{
+  margin-left: 16.5cm;
+  margin-top: 0.2cm;
+  color: #493c3c;
+}
+.in{
+  margin-left: 2.7cm;
+}
+.silka4{
+  margin-top : 2.91cm;
+  margin-left: 18cm;
+
+}
+ 
+                                                    
+
+/* coshuk */
+.order{
+  margin-left: 14.5cm;
+  color: #493c3c;
+  margin-top: 0.2cm;
+  
+}
+.knopka{
+  margin-top: 0.5cm;
+  align-self: center;
+}
+.login2{
+  margin-left: 1cm;
+  margin-right: 25cm;
+  margin-top: 0.5cm;
+  background-color: rgba(253, 255, 240, 0.299);
+  text-align: center;
+  background-clip: 2cm;
+  border: solid;
+  border-color:rgba(253, 255, 240, 0.015);
+  padding: 15px;    
+}
+.login3{
+  margin-left: 25cm;
+  margin-right: 5cm;
+  margin-top: -2.8cm;
+  background-color: rgba(253, 255, 240, 0.299);
+  text-align: center;
+  background-clip: 2cm;
+  border: solid;
+  border-color:rgba(253, 255, 240, 0.015);
+  padding: 15px;  
+}
+.silka5{
+  margin-top : 8.67cm;
+  margin-left: 18cm;
+
+}
